@@ -10,7 +10,7 @@ def buscar_previsao():
         messagebox.showwarning("Input Error", "Por favor, insira o nome da cidade.")
         return
     
-    API_KEY = "73779b476ce79a4493f80eb2c081d39b"
+    API_KEY = "sua_chave_aqui"
     link = f"https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={API_KEY}&lang=pt_br"
 
     requisicao = requests.get(link)
